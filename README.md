@@ -22,3 +22,6 @@ A high-performance, combinational **Barrel Shifter** implemented in Verilog HDL.
 ## ⚙️ Architecture & Working Principle
 
 A barrel shifter avoids multi-cycle latency by cascading layers of 2-to-1 multiplexers. Each stage handles a shift distance equal to a power of two ($2^0, 2^1, \dots, 2^{n-1}$).
+Input [3:0] ──► [ Stage 0: Shift by 1? ] ──► [ Stage 1: Shift by 2? ] ──► Output [3:0]
+▲                                   ▲
+shift_amt[0]                        shift_amt[1]
