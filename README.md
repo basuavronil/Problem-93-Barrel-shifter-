@@ -19,9 +19,11 @@ A high-performance, combinational **Barrel Shifter** implemented in Verilog HDL.
 
 ---
 
-## ⚙️ Architecture & Working Principle
+### Supported Operations Summary
 
-A barrel shifter avoids multi-cycle latency by cascading layers of 2-to-1 multiplexers. Each stage handles a shift distance equal to a power of two ($2^0, 2^1, \dots, 2^{n-1}$).
-Input [3:0] ──► [ Stage 0: Shift by 1? ] ──► [ Stage 1: Shift by 2? ] ──► Output [3:0]
-▲                                   ▲
-shift_amt[0]                        shift_amt[1]
+| Opcode (`mode`) | Operation | Example Input (`1011`) | Shift (`2`) | Result |
+| :---: | :--- | :---: | :---: | :---: |
+| `2'b00` | **Logical Shift Left (LSL)** | `1011` | 2 | `1100` |
+| `2'b01` | **Logical Shift Right (LSR)** | `1011` | 2 | `0010` |
+| `2'b10` | **Arithmetic Shift Right (ASR)** | `1011` | 2 | `1110` |
+| `2'b11` | **Rotate Right (ROR)** | `1011` | 2 | `1110` |
