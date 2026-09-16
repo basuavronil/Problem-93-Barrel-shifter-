@@ -27,3 +27,11 @@ A high-performance, combinational **Barrel Shifter** implemented in Verilog HDL.
 | `2'b01` | **Logical Shift Right (LSR)** | `1011` | 2 | `0010` |
 | `2'b10` | **Arithmetic Shift Right (ASR)** | `1011` | 2 | `1110` |
 | `2'b11` | **Rotate Right (ROR)** | `1011` | 2 | `1110` |
+
+
+### Output
+#### Waveform
+<img width="959" height="244" alt="image" src="https://github.com/user-attachments/assets/97df188b-324d-4ebd-98c7-68158e592fec" />
+
+#### Simulation Terminal
+<img width="773" height="167" alt="image" src="https://github.com/user-attachments/assets/0b9cbbf8-1bd5-4560-9a4d-e4cecb8e5fd0" />
